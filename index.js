@@ -48,10 +48,8 @@ optionsPanel.port.on("text-entered", function (selVoices, volume, rate, pitch) {
 	while ( ilf.parentMenu !== null && ilf.parentMenu !== undefined){
 		ilf.parentMenu.items[0].destroy();
 	};
-	//ilf = [];
+	// add new cm entrys //
 	langslength = selVoices.length;
-	i = 0 ;
-	// add cm entrys //
 	addItems();
 });		
 	
@@ -70,13 +68,11 @@ addItems = function(){
 		i++;
 	};
 };
-
-addItems();
-
 ///// enable the hidden preference "media.webspeech.synth.enabled" in about:config 
 var prefs = Cc["@mozilla.org/preferences-service;1"].getService(Ci.nsIPrefService).getBranch("media.webspeech.synth.");
 prefs.setBoolPref("enabled", true); 
 	
+addItems();
 
 
 
