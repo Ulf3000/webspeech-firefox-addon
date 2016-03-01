@@ -1,0 +1,17 @@
+{
+  "title": "multilanguage text to speech (tts)",
+  "name": "multilanguagetexttospeechtts",
+  "id": "jid1-CmiOyUqkAs8aIw@jetpack",
+  "version": "0.4.5",
+  "description": "Multilanguage text to speech ( tts )",
+  "main": "index.js",
+  "author": "Ulf3000",
+  "engines": {
+    "firefox": ">=43.0"
+  },
+  "license": "MPL 2.0",
+  "keywords": [
+    "jetpack"
+  ],
+  "permissions": {"private-browsing": true}
+}
